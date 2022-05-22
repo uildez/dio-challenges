@@ -1,0 +1,106 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --branco: #fff
+}
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gotham', sans-serif;
+    color: var(--branco);
+}
+.container{
+    margin: 0 5rem;
+}
+
+/* Nav and Header */
+.logo{
+    width: 10%;
+    padding: .5rem;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    z-index: 1000;
+    background-color: var(--preto);
+}
+
+header nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: .5s ease all;
+} 
+
+header nav a:hover{
+    color: rgb(201, 201, 201);
+}
+
+/* First Filme */
+.main-movie {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/capa-lucifer.jpg');
+    height: 500px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .container{
+    width: 50%;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.description {
+    margin: 2rem 0;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    color: var(--branco);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: .5s ease all;
+}
+
+.button:hover{
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+/* Movies Carousel */
+.box-movies{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.item{
+    cursor: pointer;
+}

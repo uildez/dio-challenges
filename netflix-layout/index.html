@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Style Import -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/modals.css">
+
+    <!-- Font Family -->
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Netflix-Logo.png" alt="" class="logo">
+            <nav>
+                <a href="#home">Início</a>
+                <a href="#trailers">Trailers</a>
+                <a href="https://github.com/uildez/netflix-layout" target="_blank">Código</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-movie" id="home">
+            <div class="container">
+                <h3 class="title">Lucifer</h3>
+                <p class="description">Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um
+                    piano-bar
+                    e empresta sua sabedoria a uma investigadora de assassinatos.</p>
+                <div class="buttons">
+                    <button role="button" class="button"><i class="fa-solid fa-play"></i>Assistir agora</button>
+                    <button role="button" class="button"><i class="fa-solid fa-circle-info"></i>Mais
+                        Informações</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carousel-movies" id="trailers">
+        <div class="owl-carousel owl-theme">
+            <div class="item" id="modal-content-1"><img class="box-movies" src="img/capa-1.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-2"><img class="box-movies" src="img/capa-2.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-3"><img class="box-movies" src="img/capa-3.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-4"><img class="box-movies" src="img/capa-4.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-5"><img class="box-movies" src="img/capa-5.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-6"><img class="box-movies" src="img/capa-6.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-7"><img class="box-movies" src="img/capa-7.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-8"><img class="box-movies" src="img/capa-8.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-9"><img class="box-movies" src="img/capa-9.jpg" alt="Capa de Série">
+            </div>
+            <div class="item" id="modal-content-10"><img class="box-movies" src="img/capa-10.jpg" alt="Capa de Série">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+    <div id="content-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="info-movie">
+                <div class="header-info">
+                    <h2>Peaky Blinders</h2>
+                    <p>Temporadas: 6</p>
+                </div>
+                <div class="other-info">
+                    <h3>Sinopse</h3>
+                    <p>Os Peaky Blinders são uma organização criminosa de origem cigana que se passa na cidade de
+                        Birmingham, Inglaterra, em 1919, formada vários meses após o final da Primeira Guerra Mundial
+                        (1914–1918). A história é centrada na ambição do líder da gangue inglesa, Thomas "Tommy" Shelby
+                        (Cillian Murphy)</p>
+                </div>
+            </div>
+            <div class="embed-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2nsT9uQPIrk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/908b1d3f6e.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modalsconfig.js"></script>
+</body>
+
+</html>

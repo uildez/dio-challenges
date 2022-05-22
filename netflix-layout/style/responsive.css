@@ -1,0 +1,39 @@
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Nav and Header */
+    header nav {
+        margin-bottom: 2rem;
+    }
+    nav a {
+        font-size: .8rem;
+        margin: 0 1rem!important;
+    }
+
+    .logo {
+        width: 30%;
+        padding: 0.5rem;
+    }
+    
+    /* First Filme */
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .button {
+        margin-top: 1rem;
+        width: 90%;
+        display: flex;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .main-movie .container {
+        width: 55%;
+    }
+}
